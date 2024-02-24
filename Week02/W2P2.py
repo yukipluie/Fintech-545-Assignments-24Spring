@@ -58,7 +58,6 @@ def myll_t(params, x, y):
     beta, df, sigma = params[:-2], params[-2], params[-1]
     e = y - np.dot(x, beta)
 
-
     pdf_values = t.pdf(e, df)  
     ll = np.sum(np.log(pdf_values))
     
